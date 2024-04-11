@@ -4,6 +4,7 @@ from pageobject.login_page import Login_Page
 import time
 import allure
 
+
 @allure.feature("Login")
 class Test_Login():
 
@@ -13,4 +14,6 @@ class Test_Login():
         login = Login_Page(self.driver).loginpage(username='15501411920', password='Runaway9')
         time.sleep(3)
 
-pytest.main(['-s', 'test_login.py', '--alluredir', './result'])
+
+if __name__ == '__main__':
+    pytest.main(['-s', 'test_login.py', '--alluredir', './result'])
