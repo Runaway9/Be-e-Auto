@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 
 #点后端数据分离
-excel = openpyxl.load_workbook('D:/AutoTest/bee/beedata.xlsx')
+excel = openpyxl.load_workbook('/testdata/beedata.xlsx')
 sheet = excel.get_sheet_by_name('beedata')
 
 wd = webdriver.Chrome()

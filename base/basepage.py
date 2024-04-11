@@ -1,3 +1,6 @@
+import pytest
+
+
 class BasePage:
     # 属性-->初始化数据
     def __init__(self, driver):
